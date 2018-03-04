@@ -1,0 +1,34 @@
+Tema 3 POO - Ionașcu Andrei 325CD
+
+	1.ObservableFIFOCache
+	Acest cache va prelua toate metodele prezente in FIFOCache, singurele
+modificari fiind aduse prin faptul ca acesta este de tip Observable si va
+transmite evenimente de tip HIT/MISS/PUT catre listeneri.
+
+	2.LRUCache
+	Acest cache a fost realizat cu ajutorul unui HashMap in care voi salva
+perechile de tip (Key, Node<Key, Value>) pentru o accesare/verificare rapida a 
+datelor. Structura Node realizeaza o lista dublu inlantuita intre noduri pentru
+a facilita mutarea elementelor din LRU cache, fiind nevoie a se tine evidenta
+fisierelor ordonate in functie de momentul accesarii acestora:
+leastRecent -> mostRecent.
+
+	3.TimeAwareCache
+	Acest cache a fost realizate pe baza LRUCache-ului, singura modificare
+fiind reprezentata de prezenta unui HashMap (Key, TimeStamp = Long) ce
+va memora timestamp-ul fisierelor.
+
+	4.StatsListener
+	Ne va salva numarul de hit/miss/put din cadrul sistemului de cache.
+	
+	5.KeyStatsListener
+	Este realizate pe baza a 3 HashMap-uri (hits/misses/pusshes) ce va urmari
+numarul de accesari pentru fiecare fisier din cache. Acesta va fi sortat cu
+ajutorul unui comparator ce va ordona elementele in ordine descrescatoare.
+
+	6.BroadcastListener
+	Acesta va itera prin toti listenerii abonati si le va transmite
+evenimentele de tip hit/miss/put.
+
+	Pentru o intelegere mai buna a implementarii programului, puteti accesa
+javadoc-ul si puteti urmari cumentariile prezente in cod.
