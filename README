@@ -1,6 +1,4 @@
-Tema 3 POO - Ionașcu Andrei 325CD
-http://elf.cs.pub.ro/poo/teme/tema3
-
+Ionascu Andrei
 	1.ObservableFIFOCache
 	Acest cache va prelua toate metodele prezente in FIFOCache, singurele
 modificari fiind aduse prin faptul ca acesta este de tip Observable si va
