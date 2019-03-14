@@ -1,12 +1,8 @@
-# Caching System - Java
-Proiectul constă în implementarea unui sistem de caching pentru fișiere text urmărind 3 tipuri diferite de politici de replacement cache: First In First Out, Least recently used și Time aware least recently used, cât și comunicarea evenimentelor principale: hit, miss, put.
+# Caching System
+Implements a caching system for text files with 3 different input policy updates: First in First Out, Least Recently Used and Time Aware Least Recently Used, with the required operations: hit, miss, put. In the implementation I used Adapter, Strategy and Observer patterns.
+Personal gains:
+-	understanding the concepts of Desing Patterns: Adapter, Strategy and Observer
+-	understanding a practical and essential system in computer architecture
+-	using data structures in OOP context
 
-Beneficiu personal:
-
-- aprofundarea noțiunilor de Desing Patterns: Adapter Pattern, Strategy Pattern, Observer Pattern
-
-- înțelegerea unui sistem practic și esențial în arhitectura calculatoarelor
-
-- folosirea strcuturilor de date în context OOP
-
-Limbaj/biblioteci/cunoștințe folosite: Java, Desing Patterns
+Programming language/libraries/tools used: Java, Desing Patterns
